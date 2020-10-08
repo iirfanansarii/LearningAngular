@@ -7,4 +7,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'learnangular';
+  appName='iamans'
+  // interpolation 
+  name="irfan ansari"
+  getName()
+  {
+    return this.name
+  }
+  obj={
+    name:'irfan',
+    age:21
+  }
+  arr=['ans','ms','lol']
+  a=100;
+  b=200;
+  siteUrl= window.location.href
 }
