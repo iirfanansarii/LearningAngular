@@ -8,28 +8,11 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   title = 'learnangular';
- //below for normal array 
-// arrayName=['lemon','lolipop','devil']
-//below for array of object
-arrayName=[
+
+  getUserValue(values)
   {
-    name:'lemon',
-    age:22
-
-  },
- {
-    name:'lolipop',
-    age:21
-
-  },
-   {
-    name:'devil',
-    age:23
-
-  }
-  
-
-]
+   console.log(values)
+ }
 }
   
  
