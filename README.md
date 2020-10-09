@@ -1,4 +1,4 @@
-# Learnangular
+# Simple form and get form value in angular
 
 Changes have done  in **app.module.ts** ,  **'app.components.html'** and **app.components.ts'** file.
 ## Here You Go
