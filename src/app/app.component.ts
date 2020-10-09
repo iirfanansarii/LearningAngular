@@ -7,5 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'learnangular';
-  
+  newMessage='message-with-variable'
+  // getMessage(){
+  //   alert("function without parameter")
+  getMessage(name){
+    alert(name)
   }
+  }
+  
+ 
