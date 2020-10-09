@@ -7,9 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'learnangular';
-  myEvent(evt){
-    console.log(evt)
-  }
+  currentValue=""
+ getValue(val){
+   console.warn(val)
+   this.currentValue=val
+ }
   }
   
  

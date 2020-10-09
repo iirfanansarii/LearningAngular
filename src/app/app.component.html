@@ -1,35 +1,9 @@
-<h1>Event  in angular</h1>
-<button (click)="myEvent('click  event')">Eent</button>
-<br>
-<br>
-<!-- to count event only -->
-<!-- <input type="text" (keyup)="myEvent('keyup event')" />
- -->
- <!-- to print input box value  -->
-<!-- <input type="text" #box (keyup)="myEvent(box.value)" /> -->
+<h1>Get Input Text Value</h1>
+<!-- to get value while typing -->
+<!-- <input type="text" (keyup)="getValue($event.target.value)" />
+<h2>{{currentValue}}</h2> -->
 
-<!-- to print output only when click enter key -->
-<!-- <input type="text" #box (keyup.enter)="myEvent(box.value)" /> -->
-
-<!-- to print output only when click space key -->
-<!-- <input type="text" #box (keyup.space)="myEvent(box.value)" /> -->
-
-<!-- to print when keydown  -->
-<!-- <input type="text" #box (keydown)="myEvent(box.value)" /> -->
-
-<!-- blur event -->
-<!-- <input type="text" #box (blur)="myEvent('blur event')" /> -->
-
-<!-- mouse in (event call when mouse in on div) -->
-<!-- <div
-(mouseover)="myEvent('mouse in')"
- style="background-color: aqua;">
- Mouse Event
-</div> -->
-
-<!-- mouse leave (event call when mouse leave from div) -->
-<div
-(mouseleave)="myEvent('mouse in')"
- style="background-color: aqua;">
- Mouse Leave
-</div>
+<!-- to print input value when button click -->
+<input type="text" #box />
+<button (click)="getValue(box.value)">Get Value</button>
+<h2>{{currentValue}}</h2>
