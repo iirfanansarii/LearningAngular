@@ -5,13 +5,14 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
   title = 'learnangular';
-  currentValue=""
- getValue(val){
-   console.warn(val)
-   this.currentValue=val
- }
+  name="lemon"
+  disabledBox=true
+  enabledBox(){
+   this.disabledBox=false
+  }
   }
   
  

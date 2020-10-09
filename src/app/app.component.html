@@ -1,9 +1,22 @@
-<h1>Get Input Text Value</h1>
-<!-- to get value while typing -->
-<!-- <input type="text" (keyup)="getValue($event.target.value)" />
-<h2>{{currentValue}}</h2> -->
+<h1>Property Binding In Angular</h1>
 
-<!-- to print input value when button click -->
-<input type="text" #box />
-<button (click)="getValue(box.value)">Get Value</button>
-<h2>{{currentValue}}</h2>
+<!-- TO DO:
+*Bind a property with hmtl element
+*let's take two textbox
+*try to enable
+*difference b/w property binding and Interpolation
+-->
+<!-- binding text with box by property binding  method-->
+<input type="text" [value]="name" />
+<br><br>
+<!-- binding text with box by interpolation method -->
+<input type="text" value={{name}} />
+<br><br>
+
+<!--   property binding can handle disabled attribute -->
+<input type="text"  [disabled]="disabledBox" [value]="name" />
+<br><br>
+<!--   interpolatin can not handle disabled attributes -->
+<input type="text"  disabled={{disabledBox}} value={{name}} />
+<br><br>
+<button (click)="enabledBox()">Enbale Textbox</button>
