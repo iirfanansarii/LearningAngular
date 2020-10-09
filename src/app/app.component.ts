@@ -8,7 +8,28 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   title = 'learnangular';
-  color="green"
+ //below for normal array 
+// arrayName=['lemon','lolipop','devil']
+//below for array of object
+arrayName=[
+  {
+    name:'lemon',
+    age:22
+
+  },
+ {
+    name:'lolipop',
+    age:21
+
+  },
+   {
+    name:'devil',
+    age:23
+
+  }
+  
+
+]
 }
   
  

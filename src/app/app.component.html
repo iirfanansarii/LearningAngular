@@ -1,27 +1,31 @@
-<h1> Switch  Statement In Angular</h1>
+<h1> For Loop In Angular</h1>
 
-<!-- Intro:
-*we use switch cases when we have multiple conditions for single action
-*eg:data show based on color | data show based on months| data show based on days 
+<!--To Do: 
+*Make an array
+*Apply for loop with it html table
+*Make a array with object 
+*Apply for loop with it html table
 
  -->
+<!-- for normal array element -->
+<!-- <h4 *ngFor="let item of arrayName">
+{{item}}
+</h4> -->
 
-<!-- TO DO:
-*Make a property color
-*show data according to color name
+<!-- for array of object -->
+<!-- <h4 *ngFor="let item of arrayName">
+{{item.name}} 
+</h4> -->
+<!--above  item.name to print name and item.age to print age from array object -->
 
--->
-<div [ngSwitch]="color">
-<h2 style="color: red;" *ngSwitchCase="'red'">
-  red color
-</h2>
-
-<h2 style="color: green;" *ngSwitchCase="'green'">
-  green color
-</h2>
-
-<h2 style="color: yellow;" *ngSwitchCase="'yellow'">
-  yellow color
-</h2>
-
-</div>
+<!-- now to print name and age both in tabular form -->
+<table border="1">
+  <tr>
+    <td>Name</td>
+    <td>Age</td>
+  </tr>
+  <tr *ngFor="let item of arrayName">
+    <td>{{item.name}}</td>
+    <td>{{item.age}}</td>
+  </tr>
+</table>
