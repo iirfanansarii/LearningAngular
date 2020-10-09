@@ -11,7 +11,7 @@ Changes have done  in **app.module.ts** ,  **'app.components.html'** and **app.c
 * Make function and get form value
  
 
- #### Steps To Do :
+ #### Steps To Make Form :
   * Go to **app.module.ts** file and import FormsModule 
   * Make a form in **app.components.html** file
   * Define function to get value from html form in **app.components.ts** file
