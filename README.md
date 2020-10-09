@@ -1,4 +1,4 @@
 # Learnangular
-Changes have done  only in  'app.component.html' and app.component.ts' file.
+Changes have done  only in  **'app.components.html'** and **app.components.ts'** file.
 
 
