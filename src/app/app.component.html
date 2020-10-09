@@ -1,22 +1,45 @@
-<h1>Property Binding In Angular</h1>
+<h1> Conditional Statement In Angular</h1>
 
 <!-- TO DO:
-*Bind a property with hmtl element
-*let's take two textbox
-*try to enable
-*difference b/w property binding and Interpolation
+*Make If Condition 
+*Make IF Else Condition
+*Make Conditon with string 
+*Make elseif condition
+*Make condition with property binding 
 -->
-<!-- binding text with box by property binding  method-->
-<input type="text" [value]="name" />
-<br><br>
-<!-- binding text with box by interpolation method -->
-<input type="text" value={{name}} />
-<br><br>
+<!-- *if Condition eg:1-->
+ <!-- <h1 *ngIf="show">
+     If Block 
+ </h1> -->
 
-<!--   property binding can handle disabled attribute -->
-<input type="text"  [disabled]="disabledBox" [value]="name" />
-<br><br>
-<!--   interpolatin can not handle disabled attributes -->
-<input type="text"  disabled={{disabledBox}} value={{name}} />
-<br><br>
-<button (click)="enabledBox()">Enbale Textbox</button>
+ <!-- *IF Else Condition eg:2 -->
+ <!-- <h1 *ngIf="show else elseBlock">
+     If  Block
+ </h1>
+ <ng-template #elseBlock> 
+     <h1>else bolck</h1>
+ </ng-template> -->
+
+ <!-- *Conditon with string  eg:3-->
+<!-- <h1 *ngIf="show=='yes'; then ifBlock else elseBlock">
+</h1>
+ <ng-template #ifBlock> 
+     <h1>If block</h1>
+ </ng-template>
+ <ng-template #elseBlock> 
+     <h1>else block</h1>
+ </ng-template>  -->
+
+
+ <!-- *else if statement eg:4-->
+ <ng-template [ngIf]="show=='red'">
+  <h1>Red Block</h1>
+ </ng-template>
+
+ <ng-template [ngIf]="show=='green'">
+  <h1>Green Block</h1>
+ </ng-template>
+
+ <ng-template [ngIf]="show=='yellow'">
+  <h1>Yellow Block</h1>
+ </ng-template>
