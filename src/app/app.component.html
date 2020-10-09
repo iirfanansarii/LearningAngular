@@ -1,45 +1,27 @@
-<h1> Conditional Statement In Angular</h1>
+<h1> Switch  Statement In Angular</h1>
+
+<!-- Intro:
+*we use switch cases when we have multiple conditions for single action
+*eg:data show based on color | data show based on months| data show based on days 
+
+ -->
 
 <!-- TO DO:
-*Make If Condition 
-*Make IF Else Condition
-*Make Conditon with string 
-*Make elseif condition
-*Make condition with property binding 
+*Make a property color
+*show data according to color name
+
 -->
-<!-- *if Condition eg:1-->
- <!-- <h1 *ngIf="show">
-     If Block 
- </h1> -->
+<div [ngSwitch]="color">
+<h2 style="color: red;" *ngSwitchCase="'red'">
+  red color
+</h2>
 
- <!-- *IF Else Condition eg:2 -->
- <!-- <h1 *ngIf="show else elseBlock">
-     If  Block
- </h1>
- <ng-template #elseBlock> 
-     <h1>else bolck</h1>
- </ng-template> -->
+<h2 style="color: green;" *ngSwitchCase="'green'">
+  green color
+</h2>
 
- <!-- *Conditon with string  eg:3-->
-<!-- <h1 *ngIf="show=='yes'; then ifBlock else elseBlock">
-</h1>
- <ng-template #ifBlock> 
-     <h1>If block</h1>
- </ng-template>
- <ng-template #elseBlock> 
-     <h1>else block</h1>
- </ng-template>  -->
+<h2 style="color: yellow;" *ngSwitchCase="'yellow'">
+  yellow color
+</h2>
 
-
- <!-- *else if statement eg:4-->
- <ng-template [ngIf]="show=='red'">
-  <h1>Red Block</h1>
- </ng-template>
-
- <ng-template [ngIf]="show=='green'">
-  <h1>Green Block</h1>
- </ng-template>
-
- <ng-template [ngIf]="show=='yellow'">
-  <h1>Yellow Block</h1>
- </ng-template>
+</div>
