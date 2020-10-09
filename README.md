@@ -15,4 +15,4 @@ Changes have done  in **app.module.ts** ,  **'app.components.html'** and **app.c
   * Go to **app.module.ts** file and import FormsModule 
   * Make a form in **app.components.html** file
   * Define function to get value from html form in **app.components.ts** file
-  * Define ngModel in each form input to connect field with form   
+  * Define ngModel in each form input to connect input field/value with form   
