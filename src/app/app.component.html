@@ -1,20 +1,26 @@
-<h1> Simple Form  In Angular</h1>
+<app-header></app-header>
+<h1> Making Header And Footer In Angular</h1>
+<app-footer></app-footer>
+   
 <!--To Do: 
-*Make a simple form in angular
-*Import Form module in module file
-*Make a form
-*Make function and get form value
+*Create Header Component
+*Create Footer Component
+*Use Both Component
+*Add Style
  -->
 
- <!-- Steps To DO:
-  *Go to app.module.ts file and import FormsModule 
-  *Make a form in app.components.html file
-  *Define function to get value from form in app.components.ts file
-  *Define ngModel in each form input attribute to connect field with form   
--->
-  <form  #simpleForm="ngForm" (ngSubmit)="getUserValue(simpleForm.value)" >
-  <input type="text" ngModel name="username" placeholder="type name"> <br><br>
-  <input type="text" ngModel name="age" placeholder="type age"> <br><br>
-  <input type="text" ngModel name="address" placeholder="type address"><br><br>
-  <button>Get User Value</button>
-  </form>
+ <!-- 
+   Note: 
+    We are making header and footer component so we can 
+   use it anywhere.
+  -->
+
+  <!-- Steps to make heder and footer
+    1.Go to command line and create component for both header and footer 
+      * command:ng g c header //for header 
+      * command:ng g c footer //for footer
+    2. write code in both component to make header and footer
+       * header.component.html  //for header html
+       * header.component.css   // for header css
+    3. I have also written some code in global css file which is styles.css to remove default padding and margin value 
+   -->
