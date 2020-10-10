@@ -24,8 +24,10 @@ _Note:  We are making header and footer component so we can use it anywhere._
    * command: ng g c header   
    * command: ng g c footer 
 * Write code in both component (header & footer) to make header and footer
-   * header.component.html   // for header html
+   * header.component.html  // for header html
    * header.component.css   // for header css
+   * footer.component.html  // for footer html
+   * footer.component.html  // for footer css
 * Import both component selector in app.component.html file.   
 * I have also written some code in global css file (**styles.css**) to remove default padding and margin value 
   
