@@ -18,7 +18,7 @@ Dynamic Style 🎨
    > dynamic style use to apply
    > css conditionally 
    
-   #### Steps To Do 📝
+   #### Steps For Dynamic Style 😎
 * Define any html element in **app.component.html** file
 * Define color property in **app.component.ts** file
 * Define color propert name in html element with only double inverted commas
