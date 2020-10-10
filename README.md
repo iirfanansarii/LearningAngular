@@ -30,4 +30,4 @@ _Note:  We are making header and footer component so we can use it anywhere._
    * footer.component.html  // for footer css
 * Import both component selector in app.component.html file.   
 * I have also written some code in global css file (**styles.css**) to remove default padding and margin value 
-  
+
