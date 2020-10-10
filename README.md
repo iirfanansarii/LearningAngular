@@ -19,7 +19,7 @@
 
 _Note:  We are making header and footer component so we can use it anywhere._
 
-#### Steps to make header and footer 😂
+#### Steps to make header and footer 🤩
 * Go to command line and create component for both header and footer 
    * command: ng g c header   
    * command: ng g c footer 
