@@ -1,17 +1,17 @@
-#  Make Header and Footer In Angular
+#  Make Header and Footer In Angular 👋🏻 
 
-## Changes have done  in
+## Changes have done  in ✍🏿
 * app.components.html
 * header.component.html
 * header.component.css
 * footer.component.html
 * footer.component.css
 * styles.css (**Global CSS**)
-## Here You Go
+## Here You Go 🏃
   1. Go to src folder 
   2. Go to app folder
   
- ### To Do: 
+ ### To Do: 📝
 * Create Header Component
 * Create Footer Component
 * Use Both Component
@@ -19,7 +19,7 @@
 
 _Note:  We are making header and footer component so we can use it anywhere._
 
-#### Steps to make header and footer
+#### Steps to make header and footer 😂
 * Go to command line and create component for both header and footer 
    * command: ng g c header   
    * command: ng g c footer 
