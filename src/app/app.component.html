@@ -1,36 +1,22 @@
-<h1> Style Binding In Angular</h1>
+<h1> Add Bootstrap In Angular 10 </h1>
 
-<!--To Do:
-* Difference between normal and style binding 
-* Add dynamic style
-* Update style with button click
-* Add conditional style 
--->
+<!--To Do: 
+* Add bootstrap in angular 10
+* Run command for install bootstrap
+* Try with some bootstrap example
+* We check and use code from official website of ng-bootstrap
+* Below command will install all the library of bootstrap
+   * command : ng add @ng-bootstrap/ng-bootstrap
+   
+ -->
+ <!--Note:
+* Restart your ng server after installing bootstrap     
 
-<!--Term Define: 
-* Dynamic Style
-   * dynamic style use to apply css conditionally 
-  -->
-
-<!-- Steps To Do:
-* Define any html element in app.component.html file
-* Define color property in app.component.ts file
-* Define color propert name in html element with only double inverted commas
-* Normal Style Binding Uses both single and double inverted commas to style html element
-
-   -->
-<h1 style="color: blueviolet;">Normal Inline CSS </h1> 
-  
-<h1 [style.color]="'orange'">Dynamic Style example-1</h1>
-<h1 [style.backgroundColor]="'yellow'">Dynamic Style Without  Color Property </h1>
-
-<!-- below dynamic style  using  color property -->
-<!-- color property is just a property which has defined in app.component.ts file-->
-<!-- 
-<h1 [style.backgroundColor]="color">Dynamic Style Using  Color Property </h1>
-<button (click)="changeColor()">Change Color</button> 
--->
-
-<!-- below condiotnal style -->
-<h1 [style.color]="err?'red':'green'">condiotnal Style Using  Color Property </h1>
-<button (click)="changeColor()">Change Color</button>
+ -->
+ 
+<p *ngFor="let alert of alerts">
+  <ngb-alert [type]="alert.type" (close)="close(alert)">{{ alert.message }}</ngb-alert>
+</p>
+<p>
+  <button type="button" class="btn btn-primary" (click)="reset()">Reset</button>
+</p>

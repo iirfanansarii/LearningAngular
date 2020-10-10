@@ -1,4 +1,37 @@
 import { Component } from '@angular/core';
+interface Alert {
+  type: string;
+  message: string;
+}
+
+const ALERTS: Alert[] = [{
+    type: 'success',
+    message: 'This is an success alert',
+  }, {
+    type: 'info',
+    message: 'This is an info alert',
+  }, {
+    type: 'warning',
+    message: 'This is a warning alert',
+  }, {
+    type: 'danger',
+    message: 'This is a danger alert',
+  }, {
+    type: 'primary',
+    message: 'This is a primary alert',
+  }, {
+    type: 'secondary',
+    message: 'This is a secondary alert',
+  }, {
+    type: 'light',
+    message: 'This is a light alert',
+  }, {
+    type: 'dark',
+    message: 'This is a dark alert',
+  }
+];
+
+
 
 @Component({
   selector: 'app-root',
@@ -7,17 +40,20 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  title = 'learnangular';
+  title = 'learnangular';  
+ alerts: Alert[];
 
-  //below defining color property for dynamic style
-  color="orange"
+  constructor() {
+    this.reset();
+  }
 
-//  below dynminc style function to change color
-changeColor(){
-  this.color="red"
-}
-// below condtional style 
-  err=false;
+  close(alert: Alert) {
+    this.alerts.splice(this.alerts.indexOf(alert), 1);
+  }
+
+  reset() {
+    this.alerts = Array.from(ALERTS);
+  } 
 }
   
  
