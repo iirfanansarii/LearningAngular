@@ -1,26 +1,36 @@
-<app-header></app-header>
-<h1> Making Header And Footer In Angular</h1>
-<app-footer></app-footer>
-   
-<!--To Do: 
-*Create Header Component
-*Create Footer Component
-*Use Both Component
-*Add Style
- -->
+<h1> Style Binding In Angular</h1>
 
- <!-- 
-   Note: 
-    We are making header and footer component so we can 
-   use it anywhere.
+<!--To Do:
+* Difference between normal and style binding 
+* Add dynamic style
+* Update style with button click
+* Add conditional style 
+-->
+
+<!--Term Define: 
+* Dynamic Style
+   * dynamic style use to apply css conditionally 
   -->
 
-  <!-- Steps to make heder and footer
-    1.Go to command line and create component for both header and footer 
-      * command:ng g c header //for header 
-      * command:ng g c footer //for footer
-    2. write code in both component to make header and footer
-       * header.component.html  //for header html
-       * header.component.css   // for header css
-    3. I have also written some code in global css file which is styles.css to remove default padding and margin value 
+<!-- Steps To Do:
+* Define any html element in app.component.html file
+* Define color property in app.component.ts file
+* Define color propert name in html element with only double inverted commas
+* Normal Style Binding Uses both single and double inverted commas to style html element
+
    -->
+<h1 style="color: blueviolet;">Normal Inline CSS </h1> 
+  
+<h1 [style.color]="'orange'">Dynamic Style example-1</h1>
+<h1 [style.backgroundColor]="'yellow'">Dynamic Style Without  Color Property </h1>
+
+<!-- below dynamic style  using  color property -->
+<!-- color property is just a property which has defined in app.component.ts file-->
+<!-- 
+<h1 [style.backgroundColor]="color">Dynamic Style Using  Color Property </h1>
+<button (click)="changeColor()">Change Color</button> 
+-->
+
+<!-- below condiotnal style -->
+<h1 [style.color]="err?'red':'green'">condiotnal Style Using  Color Property </h1>
+<button (click)="changeColor()">Change Color</button>
