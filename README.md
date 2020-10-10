@@ -21,9 +21,9 @@ _Note:  We are making header and footer component so we can use it anywhere._
 
 #### Steps to make header and footer
 * Go to command line and create component for both header and footer 
-   * command:ng g c header  // for header 
-   * command:ng g c footer // for footer
-* Write code in both component(headr & footer) to make header and footer
+   * command: ng g c header   
+   * command: ng g c footer 
+* Write code in both component (header & footer) to make header and footer
    * header.component.html   // for header html
    * header.component.css   // for header css
 * Import both component selector in app.component.html file.   
