@@ -1,22 +1,37 @@
-<h1> Add Bootstrap In Angular 10 </h1>
+<h1>Add Material UI  In Angular 10 </h1>
 
-<!--To Do: 
-* Add bootstrap in angular 10
-* Run command for install bootstrap
-* Try with some bootstrap example
-* We check and use code from official website of ng-bootstrap
-* Below command will install all the library of bootstrap
-   * command : ng add @ng-bootstrap/ng-bootstrap
-   
- -->
- <!--Note:
-* Restart your ng server after installing bootstrap     
+<!--To Do:
+* What is material UI
+* Material Installation Commmand: ng add @angular/material
+* Select some while installing material
+* Use some component with example such as Slider and Button   
 
  -->
- 
-<p *ngFor="let alert of alerts">
-  <ngb-alert [type]="alert.type" (close)="close(alert)">{{ alert.message }}</ngb-alert>
-</p>
-<p>
-  <button type="button" class="btn btn-primary" (click)="reset()">Reset</button>
-</p>
+
+ <!--File Changes While Material Installation
+ * angular.json
+ * index.html
+ * styles.css
+ * app.module.ts  
+
+  -->
+
+  <!--Working Steps: 
+* Install Material UI From the given command
+* Go to app.module.ts file and import  material API from which you want to use 
+   *(eg: If you'd import button API then you can use all those button which are present in that API) 
+ * Go to app.component.html file and use those material from that API which you have imported in app.module.ts file  
+   *(eg: In this example i have imported button and slider API)
+   -->
+
+<!-- Normal Button -->
+<button>Normal Buttom</button> <br> <br>
+
+<!--  material button Example -->
+<button mat-button color="primary">Material Buttom 1</button> <br> <br>
+<button mat-button color="warn">Material Buttom 2</button> <br>
+
+<!-- Material Slider Example -->
+<mat-slider ></mat-slider><br>
+<mat-slider min="1" max="5" step="0.5" value="1.5"></mat-slider> <br>
+<mat-slider vertical></mat-slider>
