@@ -1,7 +1,4 @@
 import { Component } from '@angular/core';
-
-
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,17 +6,33 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  title = 'learnangular';  
- 
-  // below defining property for parent child
-   data="Lemon"
+title = 'learnangular';  
+//first example without array
+// users={
+// name:'lemon rice',
+// age:22,
+// address:'somewhere on earth'
+//  }
 
-  // below defining object 
-  devil={
-    name:'princess',
-    age:21
-  }
+//  second example with array
 
+users1=[
+  {
+  name:'dom',
+  age:22,
+  address:'On Google Map'
+ },
+
+ {
+  name:'sam',
+  age:22,
+  address:'earth'
+ },
+
+ {
+  name:'Romi',
+  age:21,
+  address:'earth'
+ }
+]
 }
-  
- 

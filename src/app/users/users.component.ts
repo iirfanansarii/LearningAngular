@@ -8,14 +8,12 @@ import { Component, OnInit ,Input} from '@angular/core';
 })
 export class UsersComponent implements OnInit {
 
-  // below defining decorator (line 12)
-  @Input() devilName
+//import is basically a decorator whic we define like we did at below line
+  @Input() ans
 
   constructor() { }
 
   ngOnInit(): void {
-    // to get data in console file
-    console.warn(this.devilName)
-  }
-
+  
+}
 }
