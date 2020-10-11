@@ -23,8 +23,9 @@
 * Install Material UI From the given command
 * Go to **app.module.ts** file and import  material API from which you want to use 
   * (eg: If you'd import button API then you can use all those button which are present in that API) 
-* Go to app.component.html file and use those material from that API which you have imported in **app.module.ts** file  
+* Go to **app.component.html** file and use those material from that API which you have imported in **app.module.ts** file  
   * (eg: In this example i have imported button and slider API)
-    
-  
+   
+  ###### Website Link
+  [Angular Material UI](https://material.angular.io/components/categories)
   
