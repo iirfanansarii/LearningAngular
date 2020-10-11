@@ -1,37 +1,33 @@
-<h1>Add Material UI  In Angular 10 </h1>
+<h1>Pass data parent to child  In Angular 10 </h1>
 
-<!--To Do:
-* What is material UI
-* Material Installation Commmand: ng add @angular/material
-* Select some while installing material
-* Use some component with example such as Slider and Button   
+<!-- To Do
+* Make  any (let say : users) component 
+   * command: ng g c users
+* Make users component the child  component of app component
+* Pass data from  app component to child component 
+* Display data in child component  
+-->
 
- -->
+  <!-- Step by Steps
+* Make a users coponent using command
+* Go to users.component.ts file and copy it's selector name and paste it in app.component.html file
+* Define a child coponent in app.component.html file (eg:h3)
+* Define a property in app.component.ts file to send from app.component.html (parent) to users.component.html(child) 
+* In this first i will send a normal name and then i will send one object  
+* Binding property as property binding in app.compoent.html (eg:name)
+* Now go to child component ts file i.e users.component.ts file an import input
+* Go to users.component.html file to get parent data and display it on browser
+* To get data in console you can write console code in users.console.ts file to get data
 
- <!--File Changes While Material Installation
- * angular.json
- * index.html
- * styles.css
- * app.module.ts  
+-->
 
-  -->
+<!-- getting data from parent to child without object -->
+<!-- 
+<app-users [lemonName]="data">Child Component</app-users>
+-->
 
-  <!--Working Steps: 
-* Install Material UI From the given command
-* Go to app.module.ts file and import  material API from which you want to use 
-   *(eg: If you'd import button API then you can use all those button which are present in that API) 
- * Go to app.component.html file and use those material from that API which you have imported in app.module.ts file  
-   *(eg: In this example i have imported button and slider API)
+   <!-- getting data from parent to child with devil  object
+  also binding devil with devilName using dynamic data binding method
    -->
-
-<!-- Normal Button -->
-<button>Normal Buttom</button> <br> <br>
-
-<!--  material button Example -->
-<button mat-button color="primary">Material Buttom 1</button> <br> <br>
-<button mat-button color="warn">Material Buttom 2</button> <br>
-
-<!-- Material Slider Example -->
-<mat-slider ></mat-slider><br>
-<mat-slider min="1" max="5" step="0.5" value="1.5"></mat-slider> <br>
-<mat-slider vertical></mat-slider>
+   <app-users [devilName]="devil">Child Component</app-users>
+   

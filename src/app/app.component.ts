@@ -11,6 +11,15 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'learnangular';  
  
+  // below defining property for parent child
+   data="Lemon"
+
+  // below defining object 
+  devil={
+    name:'princess',
+    age:21
+  }
+
 }
   
  
