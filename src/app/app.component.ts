@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+// bootstrapp  code starts below
 interface Alert {
   type: string;
   message: string;
@@ -31,14 +32,14 @@ const ALERTS: Alert[] = [{
   }
 ];
 
-
+// bootstrap code ends above
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-
+// bootstrap code starts below
 export class AppComponent {
   title = 'learnangular';  
  alerts: Alert[];
@@ -54,6 +55,8 @@ export class AppComponent {
   reset() {
     this.alerts = Array.from(ALERTS);
   } 
+// bootstrap code ends above
+
 }
   
  
