@@ -22,13 +22,13 @@ _Note:_
       
  ##### Steps by step 🚶🏻‍♂️🚶🏻‍♂️
 * Add routing to project while creating new angular project
-* Go to app-routing.module.ts file and import  user and admin component in that file
-* In app-routing.module.ts file also define path for both component
-* Make two anchor tag for user and admin component in app.component.html file for routing 
+* Go to **app-routing.module.ts** file and import  user, admin and page-not-found-component in that file
+* In **app-routing.module.ts** file also define path for both component
+* Make two anchor tag for user and admin component in **app.component.html** file for routing 
 * Now we will use user and admin component path for routing 
 * Add <router-outlet> to get user and admin data  on browser
 * In 404 page we create one more compoent and also set componet as **(wild card)
-* Wild card is that route or path which is universally present that it can be use for all those page whic are absent
+* Wild card is that page  route or path which is universally present to all that page which are absent.
 
 
 
