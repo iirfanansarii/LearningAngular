@@ -1,26 +1,29 @@
-<h1> Custom Directives in Angular  10 </h1>
-<!--To Do
-* What is directive
-* Exmple of default directive
-* How to make custom directive
-  *command: ng g directive directive-name  
-* Use it with html    
+<h1>Services in Angular  10 </h1>
+
+<!--To Do:
+* What is service in angular
+* How to make service
+* How to use service
+* Example     
 
  -->
-<!-- 
-* Directives are use to manipulates  DOM or html.
-* That mean you can change anything inside html file .
+
+<!--Service In Brief:
+* The man use of service is to share data among 2-3 components.
+* We can write code inside services and from there we can share that data to any component.
+* We use services so we don't need to write same code in all coponent.
+
+--> 
+
+<!--Note 
+* Serives are neither component dependent nor module dependent.
+* That mean services can be use in many module any where any many times.
  -->
-<!--Step by step 
-* Create new cusotm directive using command
-* Define some html elemen inside app.component.html file to apply custom directive
-* Go to custom-style.directive.ts file and coppy selector 
-* Paste selector inside app.component.html file html element
-* Go to custom-style.directive.ts file and import ElementRef element
-* Make an instance of ElementRef inside constructor of ElementRef
-* Once instance define then we can use css on that instance.
-* so we can use custom-style.directive.ts file selector to manipulate any html elemet
--->
- <h2>Normal heading </h2>
- <h2 appCustomStyle>Custom heading </h2><br>
- <h1 appCustomStyle>Custom heading 2</h1>
+
+ <!--Step by step
+* Create a service using command 
+  * command: ng g  service sevice-name     
+* Define function any inside users-data.service.ts file
+* 
+  -->
+<h2>{{name}}</h2>  
