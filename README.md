@@ -13,7 +13,8 @@
 * Create 2 component in that project for routing and one for 404 page
 * Add routing in **app-routing.module.ts** file
 * Write code in html file for making routing link
-* Test Routing       
+* Test Routing    
+
 _Note: If inside app folder  **app-routing-module.ts** file is present then routing has installed successfully_
   
 _Note:_
