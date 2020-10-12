@@ -1,27 +1,24 @@
-# Learnangular
+# Send data  child  to parent In Angular 👋🏻
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.5.
+## Changes have done  in ✍🏿
+* app.components.html
+* app.components.ts
+* user.components.html
+* user.components.ts
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Here You Go 🏃
+  1. Go to src folder 
+  2. Go to app folder
+  
+### To Do 
+* Make a user coponent
+* Use it inside app component as child
+* Pass data from child to parent with EventEmitter  
+#### Step by step
+ * Make a function in parent component  and call it from child component **i.e user.component.ts**  
+ * We will make parent funciton with parameter in app.component.ts file and the we'll pass this param to child
+ * Go to child component ts file i.e **user.component.ts** file and import Output and EventEmitter 
+ * EventEmitter  is only method which can call parent from child
+ * To call parent function  ** i.e parentComponent** from child we define a directives i.e **@Output** in child component
+ * To send data from child to parent throuh a button , make a button in child component i.e **users.component.html** and also make a click event to send data and then  define that click event function in child component i.e  **user.component.ts**
+  
