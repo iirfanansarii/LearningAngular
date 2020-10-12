@@ -1,26 +1,27 @@
-<h1> Reusable component In Angular 10 </h1>
+<h1> Send data  child  to parent In Angular 10 </h1>
 
-<!-- To Do
-* Make  any (let say : users) component 
-   * command: ng g c users
-* Make users component the child  component of app component
-* Pass data from  app component to child component 
-* Display data in child component  
-* Use for loop and result child component
--->
+<!--To Do 
+* Make a user coponent
+* Use it inside app component as child
+* Pass data from child to parent EventEmitter  
 
-  <!-- Step by Steps
-* Make a users coponent using command
-* Go to users.component.ts file and copy it's selector name and paste it in app.component.html file
-* Define a child coponent in app.component.html file (eg:h3)
-* Define a property in app.component.ts file to send from app.component.html (parent) to users.component.html(child) 
-* To pass the value in child component i.e users.componenet.html file we define a property name( eg:data) and then we pass that value to users.component.ts file property (eg:users) 
-* We  bind property name using property binding method in app.compoent.html (eg:data)
-* Now go to child component ts file i.e users.component.ts file and import input
-* Go to users.component.html file to get parent data and display it on browser
-* To get data in console you can write console code in users.console.ts file to get data
+ -->
 
--->
-<div *ngFor='let data of users1'>
-<app-users [ans]="data"></app-users>
-</div>
+ <!--step by step
+ * make a function in parent and call it from child component (user.component.ts)  
+ * we will make parent funciton with parameter in app.component.ts file and the we'll pass this param to child
+ * Go to child element ts file i.e user.component.ts file and import Output and EventEmitter 
+ * EventEmitter  is only method which can call parent from child
+ * To call parent function(parentComponent) from child we define a directives i.e @Output in child class
+ * To send data from child to parent throuh a button then
+  make a button in child file i.e users.component.html 
+  and also make a click event to send data and then 
+  define that click event function in child file i.e  user.component.ts
+  -->
+ <app-user (parentComponent)="parentComponent($event)"></app-user>
+
+ <!-- below to show console data  -->
+ <br>
+ <br>
+ <br>
+ <h3>{{name}}</h3>
