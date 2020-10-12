@@ -1,8 +1,9 @@
-<h1> Routing  in Angular  10 </h1>
+<h1> Add 404 Page   in Angular  10 </h1>
+
 <!--To Do
 * Make new angular project
   *command:  ng g projoect-name  and then select y in cmd to install routing 
-* Make 2 component in that project 
+* Make 2 component in that project for routing and one for 404 page
 * Add routing in app-routing-module file
 * Write code in html file for making routing link
 * Test Routing       
@@ -11,7 +12,6 @@
  <!--Note:
   * If you did not select routing option on the project creating time
       * command: ng generate module app -routing --flat --module=app   
-
   -->
 
 <!--Steps by step:
@@ -21,8 +21,13 @@
 * Make two anchor tag for user and admin component in app.component.html file for routing 
 * Now we will use user and admin component path for routing 
 * Add <router-outlet> to get user and admin data  on browser
+* In 404 page we create one more compoent and also set componet as **(wild card)
+* Wild card is that route or path which is universally present that it can be use for all those page whic are absent
+
 
 -->
- <a routerLink="user">User</a> <br><br>
- <a routerLink="admin">Admin</a>
+<a routerLink="user">User</a> <br><br>
+ <a routerLink="admin">Admin</a><br><br>
+ <a routerLink="about">About</a><br><br>
+ <a routerLink="contact">Contact Us</a>
  <router-outlet></router-outlet>
