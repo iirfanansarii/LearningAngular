@@ -10,11 +10,11 @@
   1. Go to src folder 
   2. Go to app folder
   
-### To Do 
+### To Do 📝
 * Make a user coponent
 * Use it inside app component as child
 * Pass data from child to parent with EventEmitter  
-#### Step by step
+#### Step by step 🚶🏻‍♂️🚶🏻‍♂️
  * Make a function in parent component  and call it from child component **i.e user.component.ts**  
  * We will make parent funciton with parameter in app.component.ts file and the we'll pass this param to child
  * Go to child component ts file i.e **user.component.ts** file and import Output and EventEmitter 
