@@ -14,6 +14,8 @@
   *command: ng g directive directive-name  
 * Use it with html  
 
+[What is directive](https://angular.io/guide/attribute-directives)
+
 _Note: Directives are use to manipulates  DOM or html_
 
 #### Step by step 🚶🏻‍♂️🚶🏻‍♂️
