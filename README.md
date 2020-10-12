@@ -1,27 +1,35 @@
-# RoutingDemo
+#  Services in Angular 👋🏻
+## Changes have done  in ✍🏿
+* app.components.html
+* custom-style.directive.ts
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.5.
+## Here You Go 🏃
+  1. Go to src folder 
+  2. Go to app folder
+  
+### To Do 📝
+* What is service in angular
+* How to make service
+* How to use service
+* Example       
 
-## Development server
+[What is directive](https://angular.io/guide/architecture-services)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+_Note_ 
+* Serives are neither component dependent nor module dependent.
+* That mean services can be use in many module any where any many times.
 
-## Code scaffolding
+#### Step by step 🚶🏻‍♂️🚶🏻‍♂️
+* Create new cusotm directive using command
+* Define some html elemen inside **app.component.html** file to apply custom directive
+* Go to **custom-style.directive.ts** file and coppy selector 
+* Paste selector inside **app.component.html** file html element
+* Go to **custom-style.directive.ts** file and import ElementRef element
+* Make an instance of ElementRef inside constructor of ElementRef
+* Once instance define then we can use css on that instance.
+* so we can use **custom-style.directive.ts** file selector to manipulate any html elemet
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+##### Service In Brief 💼
+* The man use of service is to share data among 2-3 components.
+* We can write code inside services and from there we can share that data to any component.
+* We use services so we don't need to write same code in all coponent.
