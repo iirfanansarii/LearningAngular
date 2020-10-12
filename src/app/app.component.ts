@@ -7,12 +7,8 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
 title = 'learnangular';  
-
-// Send data to console
-name=""
-parentComponent(data){
-console.warn(data)
-//below to get name 
-this.name=data.name
-}
+name='elon musk'
+today=Date.now();  // using Date.now function to show timestamp
+str ="Hello angular";
+val=10
 }

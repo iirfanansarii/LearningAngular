@@ -1,27 +1,34 @@
-<h1> Send data  child  to parent In Angular 10 </h1>
+<h1> Pipe in Angular </h1>
+<!--To Do:
+* What is pipe    
+* Pipe with string
+* Pipe with date 
+* Pipe with slice
+* Pipe with currency
+etc     
+-->
+<!--Pipe Basic Idea
+ * When we have to change any  formant like string ,date,  or currency then we use pipe
+     
+-->
 
-<!--To Do 
-* Make a user coponent
-* Use it inside app component as child
-* Pass data from child to parent EventEmitter  
+<h2>{{name | uppercase}}</h2>
+<h2>{{name | titlecase}}</h2>
+<h2>{{name | lowercase}}</h2>
 
- -->
+<!-- below timestap format using Date.now property in app.component.ts file -->
+<h2>{{today}}</h2>
 
- <!--step by step
- * make a function in parent and call it from child component (user.component.ts)  
- * we will make parent funciton with parameter in app.component.ts file and the we'll pass this param to child
- * Go to child element ts file i.e user.component.ts file and import Output and EventEmitter 
- * EventEmitter  is only method which can call parent from child
- * To call parent function(parentComponent) from child we define a directives i.e @Output in child class
- * To send data from child to parent throuh a button then
-  make a button in child file i.e users.component.html 
-  and also make a click event to send data and then 
-  define that click event function in child file i.e  user.component.ts
-  -->
- <app-user (parentComponent)="parentComponent($event)"></app-user>
+<!-- To show today only  date  -->
+<h2>{{today | date }}</h2>
 
- <!-- below to show console data  -->
- <br>
- <br>
- <br>
- <h3>{{name}}</h3>
+<!-- To show date with day name  -->
+<h2>{{today | date:'fullDate' }}</h2>
+
+<!-- Printing str -->
+<h2>{{str | slice:1}}</h2>
+<h2>{{str | slice:2}}</h2>
+
+<!--Some Current Example -->
+<h2>{{val | currency:'USD'}}</h2>
+<h2>{{val | currency:'CAD'}}</h2>
