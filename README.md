@@ -15,7 +15,7 @@
 * Write code in html file for making routing link
 * Test Routing    
 
-_Note: If inside app folder  **app-routing-module.ts** file is present then routing has installed successfully_
+_Note: If inside app folder  **app-routing.module.ts** file is present then routing has installed successfully_
   
 _Note:_
   * If you did not select add routing option while creating then you can add routing from below command
