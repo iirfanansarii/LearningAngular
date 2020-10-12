@@ -1,33 +1,26 @@
-<h1> Add 404 Page   in Angular  10 </h1>
-
+<h1> Custom Directives in Angular  10 </h1>
 <!--To Do
-* Make new angular project
-  *command:  ng g projoect-name  and then select y in cmd to install routing 
-* Make 2 component in that project for routing and one for 404 page
-* Add routing in app-routing-module file
-* Write code in html file for making routing link
-* Test Routing       
-* If inside app folder  app-routing-module.ts file is present then routing has installed successfully
+* What is directive
+* Exmple of default directive
+* How to make custom directive
+  *command: ng g directive directive-name  
+* Use it with html    
+
  -->
- <!--Note:
-  * If you did not select routing option on the project creating time
-      * command: ng generate module app -routing --flat --module=app   
-  -->
-
-<!--Steps by step:
-* Add routing to project while creating new angular project
-* Go to app-routing.module.ts file and import  user and admin component in that file
-* In app-routing.module.ts file also define path for both component
-* Make two anchor tag for user and admin component in app.component.html file for routing 
-* Now we will use user and admin component path for routing 
-* Add <router-outlet> to get user and admin data  on browser
-* In 404 page we create one more compoent and also set componet as **(wild card)
-* Wild card is that route or path which is universally present that it can be use for all those page whic are absent
-
-
+<!-- 
+* Directives are use to manipulates  DOM or html.
+* That mean you can change anything inside html file .
+ -->
+<!--Step by step 
+* Create new cusotm directive using command
+* Define some html elemen inside app.component.html file to apply custom directive
+* Go to custom-style.directive.ts file and coppy selector 
+* Paste selector inside app.component.html file html element
+* Go to custom-style.directive.ts file and import ElementRef element
+* Make an instance of ElementRef inside constructor of ElementRef
+* Once instance define then we can use css on that instance.
+* so we can use custom-style.directive.ts file selector to manipulate any html elemet
 -->
-<a routerLink="user">User</a> <br><br>
- <a routerLink="admin">Admin</a><br><br>
- <a routerLink="about">About</a><br><br>
- <a routerLink="contact">Contact Us</a>
- <router-outlet></router-outlet>
+ <h2>Normal heading </h2>
+ <h2 appCustomStyle>Custom heading </h2><br>
+ <h1 appCustomStyle>Custom heading 2</h1>
