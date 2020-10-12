@@ -28,7 +28,7 @@ _Note:_
 * Make two anchor tag for user and admin component in **app.component.html** file for routing 
 * Now we will use user and admin component path for routing 
 * Add <router-outlet> to get user and admin data  on browser
-* In 404 page we create one more component for page-not-found-component and  set it's path equla to double star(i.e path='**').
+* In 404 page we create one more component for page-not-found-component and  set it's path equla to double star (i.e path:'**' )
 * Double star is known as wild card .  
 * Wild card is that pagenroute or path which is universally present to all that page which are absent.
 
