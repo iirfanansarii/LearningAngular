@@ -27,6 +27,6 @@
 * Go to  **users-data.service.ts** file and write return value using get method
 * Now go  in that component where you want to fetch data through API (In this case **app.component.ts file**) 
 * Now import user service component in **app.component.ts file** file
-* Make a html table in app.component.ts file to show API data
-* Define a property in app.component.ts  (eg:allData) file as arrya to store all those data coming from API
+* Make a html table in **app.component.ts** file to show API data
+* Define a property in **app.component.ts**  (eg:allData) file as arrya to store all those data coming from API
 * Now to write a for loop to show data in html table (eg:*ngFor)
