@@ -1,5 +1,13 @@
 import { Component } from '@angular/core';
-import{UserServiceService} from './user-service.service'
+// below defining an interface
+
+interface dataType{
+  name:string,
+  id:number,
+  indian:boolean,
+  address:any
+}
+
 
 @Component({
   selector: 'app-root',
@@ -8,14 +16,14 @@ import{UserServiceService} from './user-service.service'
 })
 export class AppComponent {
   title = 'routing-demo';
-  allData=[];
-  
-  constructor (private user :UserServiceService)
-  {
- this.user.getData().subscribe(data=>{
-   console.warn(data)
-   this.allData=data
- })
+getData(){
+  const data:dataType={
+    name :'koi bhi' ,
+    id:10,
+    indian:true,
+    address:"somewhere in world " 
+  }
+  return data;
 }
 
 }

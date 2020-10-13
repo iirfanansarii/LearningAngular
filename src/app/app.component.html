@@ -1,36 +1,21 @@
-<h1>Show List from API Data  </h1>
+<h1> Model and Interface In Angualar </h1>
 
-<!--To Do: 
-* What is API
-* How to fetch API data in service
-* Import in component
-* Get data in component
-* How to show that data in html form which are coming from API
+<!--To Do
+
+* What is model
+* How to make it
+* How to use it
+* With model with other life
+* Use model with component file
+* Use model with service file   
+
  -->
 
  <!--Step by step
-* Open cmd and create new service
-  * command : ng g service service-name   
-* To call API we first we have to call HTTP client so we will import http client in users-service.service.ts file
-* Then make an instance of that http client (eg:http) in that file
-* Then make a function to get data from API (eg:getData) in that file
-* Go to app.module.ts file and import Http module  and then register that module into import section 
-* Go to  users-data.service.ts file and write return value using get method
-* Now go  in that component where you want to fetch data through API (In this case app.component.ts file) 
-* Import user service component in that file
-* Make a html table in app.component.ts file to show API data
-* Define a property in app.component.ts  (eg:allData) file as arrya to store all those data coming from API
-* Now to write a for loop to show data in html table (eg:*ngFor)
--->
-<table border="1">
-  <tr>
-     <td>Id</td> 
-     <td>Title</td> 
-     <td>User Id</td>   
-  </tr>
-  <tr *ngFor="let item of allData">
-     <td>{{item.id}}</td> 
-     <td>{{item.title}}</td> 
-     <td>{{item.userId}}</td>   
-  </tr>
-</table>
+ * Go to app.component.ts file and define a fuction and also define some object inside that fucntion
+ * Now to validate those objects we will make an interface and then we will assign interface with fucntion to validate it's objects
+ * Now we will create a service using command and inside that service we will copy above fucntion and interface 
+ * We can also create separate file(eg:user.ts) for interface and then we can import that interface in any component.
+
+
+  -->
