@@ -1,29 +1,21 @@
-<h1>Services in Angular  10 </h1>
+<h1>Call API | HTTP | get data from API  </h1>
 
-<!--To Do:
-* What is service in angular
-* How to make service
-* How to use service
-* Example     
-
- -->
-
-<!--Service In Brief:
-* The man use of service is to share data among 2-3 components.
-* We can write code inside services and from there we can share that data to any component.
-* We use services so we don't need to write same code in all coponent.
-
---> 
-
-<!--Note 
-* Serives are neither component dependent nor module dependent.
-* That mean services can be use in many module any where any many times.
+<!--To Do: 
+* What is API
+* How to fetch API data in service
+* Import in component
+* Get data in component
  -->
 
  <!--Step by step
-* Create a service using command 
-  * command: ng g  service sevice-name     
-* Define function any inside users-data.service.ts file
-* 
-  -->
-<h2>{{name}}</h2>  
+* Open cmd and create new service
+  * command : ng g service service-name   
+* To call API we first we have to call HTTP client so we will import http client in users-data.service.ts file
+* Then make an instance of that http client (eg:http)
+* Then make a function to get data from API (eg:getData)
+* Go to app.module.ts file and import Http module  and then register that module into import section 
+* Go to  users-data.service.ts file and write return value using get method
+* Now go  in that component where you want to fetch data through API (In this case app.component.ts file) 
+* Import user service component in that file
+
+-->

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {UsersDataService} from './users-data.service'
+import{UserServiceService} from './user-service.service'
 
 @Component({
   selector: 'app-root',
@@ -8,19 +8,12 @@ import {UsersDataService} from './users-data.service'
 })
 export class AppComponent {
   title = 'routing-demo';
-  name=""
- // below making obejct of UsersDataService
-  constructor (private user:UsersDataService){
-   
-// to print data in console
-console.warn(this.user.getData)
-
-// To get data from console or from above command
-let data=this.user.getData();
-this.name=data.name
-
+  
+  constructor (private user :UserServiceService)
+  {
+ this.user.getData().subscribe(data=>{
+   console.warn(data)
+ })
 }
-
-
 
 }
