@@ -1,27 +1,27 @@
-# RoutingDemo
+# Call API | HTTP | get data from API 🚀🚀
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.5.
+## Changes have done  in ✍
+* users-service.service.ts 
+* app.module.ts 
+* app.component.ts
 
-## Development server
+## Here You Go 🏃
+  1. Go to src folder 
+  2. Go to app folder
+  
+###  To Do 📝
+* What is API
+* How to fetch API data in service
+* Import in component
+* Get data in component
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+#### Step by step 🚶🏻‍♂️🚶🏻‍♂️
+* Open cmd and create new service
+  * command : ng g service service-name   
+* To call API we first we have to call HTTP client so we will import http client in users-service.service.ts file
+* Then make an instance of that http client (eg:http) in that file
+* Then make a function to get data from API (eg:getData) in that file
+* Go to app.module.ts file and import Http module  and then register that module into import section 
+* Go to  users-data.service.ts file and write return value using get method
+* Now go  in that component where you want to fetch data through API (In this case app.component.ts file) 
+* Import user service component in that file
