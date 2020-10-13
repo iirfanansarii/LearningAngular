@@ -8,11 +8,13 @@ import{UserServiceService} from './user-service.service'
 })
 export class AppComponent {
   title = 'routing-demo';
+  allData=[];
   
   constructor (private user :UserServiceService)
   {
  this.user.getData().subscribe(data=>{
    console.warn(data)
+   this.allData=data
  })
 }
 
