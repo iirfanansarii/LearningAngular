@@ -18,7 +18,7 @@
 #### Step by step 🚶🏻‍♂️🚶🏻‍♂️
 * Open cmd and create new service
   * command : ng g service service-name   
-* To call API we first we have to call HTTP client so we will import http client in **users-service.service.ts** file
+* To call API first we have to call HTTP client so we will import http client in **users-service.service.ts** file
 * Then make an instance of that http client (eg:http) in **users-service.service.ts** file file
 * Then make a function to get data from API (eg:getData) in **users-service.service.ts** file file
 * Go to **app.module.ts** file and import Http module  and then register that module into import section 
